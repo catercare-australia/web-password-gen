@@ -11,7 +11,7 @@ dice.
 
 ## Hosted Version
 
-[https://www.rempe.us/diceware/](https://www.rempe.us/diceware/)
+[https://diceware.rempe.us](https://diceware.rempe.us)
 
 ## Important Features
 
