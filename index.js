@@ -248,7 +248,7 @@ function displayWords (words) {
 
   // add the word to the main display
   $.each(words, function (index, obj) {
-    $('#diceWords').append('<li>' + obj.word + '<span class="text-muted">' + obj.wordNum + '</span></li>')
+    $('#diceWords').append('<li>' + obj.word + '</li>')
   })
 
   $('#diceWordsCopyableSpace').text(wordList.join(' '))
