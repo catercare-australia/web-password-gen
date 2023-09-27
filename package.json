@@ -1,10 +1,14 @@
 {
-  "name": "diceware",
+  "name": "web-password-gen",
   "version": "1.0.0",
-  "description": "A Diceware passphrase generator",
+  "description": "Cater Care passphrase generator",
   "main": "index.js",
-  "repository": "https://github.com/grempe/diceware.git",
-  "author": "Glenn Rempe <glenn@rempe.us>",
+  "repository": "https://github.com/catercare-australia/web-password-gen",
+  "homepage": "https://github.com/catercare-australia/web-password-gen#README.md",
+  "bugs": {
+    "url": "https://github.com/catercare-australia/web-password-gen/issues"
+  },
+  "author": "Christophe Bahin",
   "license": "MIT",
   "dependencies": {
     "big.js": "^6.1.1",

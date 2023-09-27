@@ -6,7 +6,7 @@ Description to be added. At some point.
 
 ### License
 
-The gem is available as open source under the terms of the
+Available as open source under the terms of the
 [MIT License](http://opensource.org/licenses/MIT).
 
 ### Warranty
@@ -18,6 +18,5 @@ the specific language governing permissions and limitations under the License.
 
 ## Thanks
 
-This implementation was inspired by the very nicely done
-[https://github.com/yesiamben/diceware](https://github.com/yesiamben/diceware).
-I took the opportunity to upgrade some security aspects and the UI.
+This implementation was forked from G. Rempe's [https://github.com/grempe/diceware](https://github.com/grempe/diceware).
+It's has some cosmectic changes and little deployment and code changes, but remains mostly the same. Thanks !
