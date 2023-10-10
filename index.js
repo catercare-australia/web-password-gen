@@ -164,65 +164,8 @@ function getWordFromWordNum (wordNum) {
       case 'alternative':
         word = alternative[wordNum]
         break
-      case 'basque':
-        word = basque[wordNum]
-        break
-      case 'catalan':
-        word = catalan[wordNum]
-        break
-      case 'czech':
-        word = czech[wordNum]
-        break
-      case 'danish':
-        word = danish[wordNum]
-        break
       case 'diceware':
         word = diceware[wordNum]
-        break
-      case 'dutch':
-        word = dutch[wordNum]
-        break
-      case 'esperanto':
-        word = esperanto[wordNum]
-        break
-      case 'finnish':
-        word = finnish[wordNum]
-        break
-      case 'french':
-        word = french[wordNum]
-        break
-      case 'german-tenne':
-        word = german[wordNum]
-        break
-      case 'german-dereko':
-        word = german_dereko[wordNum]
-        break
-      case 'hungarian':
-        word = hungarian[wordNum]
-        break
-      case 'italian':
-        word = italian[wordNum]
-        break
-      case 'japanese':
-        word = japanese[wordNum]
-        break
-      case 'maori':
-        word = maori[wordNum]
-        break
-      case 'norwegian':
-        word = norwegian[wordNum]
-        break
-      case 'polish':
-        word = polish[wordNum]
-        break
-      case 'russian':
-        word = russian[wordNum]
-        break
-      case 'swedish':
-        word = swedish[wordNum]
-        break
-      case 'spanish':
-        word = spanish[wordNum]
         break
       default:
         word = eff[wordNum]
@@ -248,7 +191,7 @@ function displayWords (words) {
 
   // add the word to the main display
   $.each(words, function (index, obj) {
-    $('#diceWords').append('<li>' + obj.word + '<span class="text-muted">' + obj.wordNum + '</span></li>')
+    $('#diceWords').append('<li>' + obj.word + '</li>')
   })
 
   $('#diceWordsCopyableSpace').text(wordList.join(' '))
