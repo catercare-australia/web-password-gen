@@ -49,13 +49,11 @@ body {
     margin-bottom: 25px; 
 }
 
-
 .panel-heading {
     height: 50px;
     display: flex;
     align-items: center;
 }
-
 
 .panel-title {
     font-size: 18px;
@@ -67,10 +65,20 @@ body {
     background-color: #252525;
 }
 
+.panel-body {
+    background-color: #F1F1F1;
+}
+
 .panel-default>.panel-heading:hover {
     background-color: #8FCF69;
 }
 
 .panel-default > .panel-heading:hover .panel-title {
     color: #252525; 
+}
+
+.footer {
+    margin-top: 20px;
+    height: 60px;
+    background-color: black;
 }

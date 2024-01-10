@@ -334,3 +334,14 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.btn-refresh').addEventListener('click', function() {
+      var contentElement = document.getElementById('diceWords');
+      if (contentElement) {
+          contentElement.innerHTML = '';
+      } else {
+          console.error('Element with id "diceWords" was not found.');
+      }
+  });
+});
