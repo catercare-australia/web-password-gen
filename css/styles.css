@@ -82,3 +82,19 @@ body {
     height: 60px;
     background-color: black;
 }
+
+.panel-heading.open {
+    background-color: #8FCF69;
+}
+
+.panel-heading.open .panel-title {
+    color: #252525;
+}
+
+.panel-heading.open:hover {
+    background-color: #252525;
+}
+
+.panel-heading.open:hover .panel-title{
+    color: #8FCF69;
+}

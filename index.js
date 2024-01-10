@@ -315,33 +315,29 @@ $(document).ready(function () {
   })
 })
 
+
+// function for dropdown menus in FAQ
 document.addEventListener('DOMContentLoaded', function() {
-  // Query all panel headings
   const panelHeadings = document.querySelectorAll('.panel-heading');
 
   panelHeadings.forEach(heading => {
-      // Add a click event listener to each panel heading
-      heading.addEventListener('click', function() {
-          // Find the next sibling element, which is the panel body
-          const panelBody = this.nextElementSibling;
+      // Initialize the state of the panel heading based on the panel content visibility
+      const panelBody = heading.nextElementSibling;
+      if (panelBody.style.display === 'none' || panelBody.style.display === '') {
+          heading.classList.remove('open');
+      } else {
+          heading.classList.add('open');
+      }
 
-          // Toggle the display of the panel body
+      // Add click event listener
+      heading.addEventListener('click', function() {
           if (panelBody.style.display === 'block') {
               panelBody.style.display = 'none';
+              this.classList.remove('open');
           } else {
               panelBody.style.display = 'block';
+              this.classList.add('open');
           }
       });
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.btn-refresh').addEventListener('click', function() {
-      var contentElement = document.getElementById('diceWords');
-      if (contentElement) {
-          contentElement.innerHTML = '';
-      } else {
-          console.error('Element with id "diceWords" was not found.');
-      }
   });
 });
