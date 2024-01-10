@@ -1,13 +1,11 @@
 body {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+    margin-top: -95px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo-container {
     background-color: #252525;
-    height: 100px;
+    height: 95px;
     display: flex;
     align-items: center;
 }
@@ -16,29 +14,63 @@ body {
     width: 320px;
     height: 40px;
     flex-shrink: 0;
-    margin-left: 20px;;
+    margin-left: 20px;
 }
 
 .container {
-    margin: 0 50px;
+    width: 85%;
 }
 
 .header {
-    margin-top: 40px;
+    font-weight: bold;
 }
 
 .lead {
-    margin-bottom: 30px;
-}
-
-.btn-group {
-    margin-top: 30px;
-    display: flex;
-
-}
-
-.genWordsButton {
-    width: 120px;
-    height: 35px;
     font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-group{
+    margin-top: 10px;
+}
+
+.panel-body {
+    display: none; /* Hide all panel bodies initially */
+}
+
+.panel-heading {
+    cursor: pointer; /* Change cursor on hover to indicate clickability */
+}
+
+.text-muted {
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 25px; 
+}
+
+
+.panel-heading {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.panel-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8FCF69;
+}
+
+.panel-default>.panel-heading {
+    background-color: #252525;
+}
+
+.panel-default>.panel-heading:hover {
+    background-color: #8FCF69;
+}
+
+.panel-default > .panel-heading:hover .panel-title {
+    color: #252525; 
 }

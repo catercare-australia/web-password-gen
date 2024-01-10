@@ -314,3 +314,23 @@ $(document).ready(function () {
     displayCrackTime(wordList)
   })
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Query all panel headings
+  const panelHeadings = document.querySelectorAll('.panel-heading');
+
+  panelHeadings.forEach(heading => {
+      // Add a click event listener to each panel heading
+      heading.addEventListener('click', function() {
+          // Find the next sibling element, which is the panel body
+          const panelBody = this.nextElementSibling;
+
+          // Toggle the display of the panel body
+          if (panelBody.style.display === 'block') {
+              panelBody.style.display = 'none';
+          } else {
+              panelBody.style.display = 'block';
+          }
+      });
+  });
+});
