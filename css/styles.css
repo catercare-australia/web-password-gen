@@ -40,7 +40,18 @@ body {
     margin-top: 20px;
 }
 
+/* btn group styling */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 .btn-group{
+    margin-top: 10px;
+}
+
+.btn-group-new {
     margin-top: 10px;
 }
 
@@ -53,6 +64,15 @@ body {
 .btn-refresh:hover {
     color: #FFF;
     background-color: #026CE8;
+}
+
+.btn-custom {
+    background-color: #D9D9D9;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #B2B2B2;
 }
 
 /* output container styling */
