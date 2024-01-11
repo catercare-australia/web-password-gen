@@ -7,6 +7,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     margin-bottom: 50px;
+    padding-bottom: 50px
 }
 
 /* header/nav section styling */
@@ -27,6 +28,7 @@ body {
 /* header styling */
 .container {
     width: 85%;
+    padding-bottom: 50px;
 }
 
 .header {
@@ -133,7 +135,7 @@ code {
 
 /* footer styling */
 .footer {
-    position: absolute; /* Changed to absolute */
+    position: fixed; /* Changed to absolute */
     bottom: 0; /* Stick to the bottom */
     width: 100%; /* Ensure it stretches across the screen */
     height: 50px; /* Height of the footer */
