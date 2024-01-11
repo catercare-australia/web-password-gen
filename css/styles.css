@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header/nav section styling */
 .logo-container {
     background-color: #252525;
     height: 95px;
@@ -17,6 +18,7 @@ body {
     margin-left: 20px;
 }
 
+/* header styling */
 .container {
     width: 85%;
 }
@@ -34,12 +36,43 @@ body {
     margin-top: 10px;
 }
 
+
+/* output container styling */
+.well {
+    background-color: #F1F1F1;
+}
+
+.label {
+    background-color: #252525;
+    color: #8FCF69;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+code {
+    font-size: 95%;
+}
+
+.copy-button {
+    font-size: 12px;
+    width: 60px;
+    font-weight: bold;
+    color: #252525;
+    
+}
+
+.copy-button:hover {
+    background-color: #8FCF69;
+}
+
+
+/* FAQ panels/dropdown styling */
 .panel-body {
-    display: none; /* Hide all panel bodies initially */
+    display: none; 
 }
 
 .panel-heading {
-    cursor: pointer; /* Change cursor on hover to indicate clickability */
+    cursor: pointer;
 }
 
 .text-muted {
@@ -77,12 +110,6 @@ body {
     color: #252525; 
 }
 
-.footer {
-    margin-top: 20px;
-    height: 60px;
-    background-color: black;
-}
-
 .panel-heading.open {
     background-color: #8FCF69;
 }
@@ -97,4 +124,11 @@ body {
 
 .panel-heading.open:hover .panel-title{
     color: #8FCF69;
+}
+
+/* footer styling */
+.footer {
+    margin-top: 20px;
+    height: 60px;
+    background-color: black;
 }
