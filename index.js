@@ -341,3 +341,13 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+// refresh page
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.querySelector('.btn.btn-refresh');
+  if (button) {
+      button.addEventListener('click', function() {
+          window.location.reload();
+      });
+  }
+});

@@ -44,6 +44,16 @@ body {
     margin-top: 10px;
 }
 
+.btn-refresh {
+    color: #FFF;
+    background-color: #3A94FD;
+    border-color: #ccc;
+}
+
+.btn-refresh:hover {
+    color: #FFF;
+    background-color: #026CE8;
+}
 
 /* output container styling */
 .well {
