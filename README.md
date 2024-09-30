@@ -2,6 +2,13 @@
 
 Description to be added. At some point.
 
+## Wordlist
+
+Wordlists have been removed from the original project. The wordlist used in the password generator tool to be used exclusively for the generation of passphrases uses a customized EFF long wordlist containing 7776 words.
+
+- the mean length of words is 7 characters
+- the median word length is 7 characters
+
 ## Legal
 
 ### License
