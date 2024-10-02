@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  webapp:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./lists:/usr/share/nginx/html/lists
+      - ./css:/usr/share/nginx/html/css
+      - ./assets:/usr/share/nginx/html/assets
+      - ./index.html:/usr/share/nginx/html/index.html

@@ -1,13 +1,19 @@
-FROM node:20-alpine as build
-RUN mkdir -p /srv/app
-RUN mkdir -p /srv/app/lists
-RUN mkdir -p /srv/app/css
-RUN npm cache clear --force
+FROM node:22-alpine as build
+
+RUN mkdir -p /srv/app &&\
+  mkdir -p /srv/app/lists &&\
+  mkdir -p /srv/app/css &&\
+  mkdir -p /srv/app/assets &&\
+  npm cache clear --force
+
 WORKDIR /srv/app
+
 COPY package.json /srv/app
 RUN npm install
+
 COPY lists/ /srv/app/lists
 COPY css/ /srv/app/css
+COPY assets/ /srv/app/assets
 COPY index.html /srv/app
 COPY index.js /srv/app
 COPY favicon.ico /srv/app

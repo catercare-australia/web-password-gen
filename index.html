@@ -13,15 +13,23 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="css/app.css" type="text/css"
         integrity="sha384-PxEoEfoht/4p3zhoZ4g/DWVF/KznvesBxHwy2sp1ufg+ZAc0KQQYgiXoUOduQODX" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" crossorigin="anonymous" />    
 </head>
 
+<body>
+    <div class="logo-container">
+        <img class="logo-img" src="./assets/cc-logo.png" alt="catercare logo" />
+    </div>
+
 <div class="container">
-    <div class="page-header">
+    <div class="page-header"> 
+        <h1 class="header">Passphrase generator</h1>
         <p class="lead">
-            Put presentation text here.
+         Securely create a unique passphrase for every account with our easy-to-use passphrase generator. With just a click, you can generate complex and easy to remember passphrases to be used as passwords on all your accounts, significantly reducing the risk of them being compromised.
         </p>
     </div>
 
+    <div class="buttons">
     <div class="btn-group" role="group" aria-label="Add random words group">
         <button type="button" class="btn btn-warning genWordsButton" data-words="5" data-rolls="5" data-reset="1">
             <span class="glyphicon glyphicon-random" aria-hidden="true"></span> 5
@@ -43,7 +51,12 @@
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
             Symbol
         </button>
+        <button type="button" class="btn btn-refresh">
+            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+            Refresh
+        </button>
     </div>
+</div>
 
     <br />
     <br />
@@ -73,11 +86,15 @@
         <span class="label label-default">entropy stats</span><br /><br />
         <p>
             There are <code id="totalWords"></code> words in your password.
-            It might take a common attacker the following time to guess :
+            It might take a common attacker the following time to find :
         </p>
         <p>~<code id="crackTimeResultsHours"></code> hours</p>
         <p>~<code id="crackTimeResultsDays"></code> days</p>
         <p>~<code id="crackTimeResultsYears"></code> years</p>
+        <p>
+            Note that though it may seem like a lot, 100 days is not that big ! With a greater amount of computing
+            power, that amount can be significantly divided, so don't go below !
+        </p>
     </div>
 
     <hr />
@@ -85,7 +102,7 @@
     <h2 class="text-muted">Frequently Asked Questions</h2>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading open">
             <h3 class="panel-title">How do I use it?</h3>
         </div>
         <div class="panel-body">
@@ -98,19 +115,10 @@
                 enhance the strength of the existing passphrase.
             </p>
             <p>
-                For extra security you can manually roll physical dice (two or five
-                die rolls for each symbol or word respectively) and enter the
-                results to add a word to your passphrase.
-            </p>
-            <p>
-                Each word or symbol displayed is shown with the index number that
-                was used to look it up in the diceware word list.
-            </p>
-            <p>
                 You can copy the generated passphrase from the copyable string on
-                the page. You should store it somewhere safe and secure. You might
+                the page. You should store it somewhere safe and secure, such as a password manager. You might
                 want to write it down and refer to the written version until you can
-                remember it.
+                remember it. If you do so, keep it on you and do not leave it on your desk !
             </p>
             <p>
                 Close your browser window once you're done so others can't discover
@@ -131,6 +139,16 @@
 
     <div class="panel panel-default">
         <div class="panel-heading">
+            <h3 class="panel-title">Is it compliant with Cater Care IT security policies ?</h3>
+        </div>
+        <div class="panel-body">Yes. Cater Care is rolling out passphrases for all users and that
+          tool has been chosen as the standard way to generate passphrases for the business.
+          For more information, consult the passphrase policy document.
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
             <h3 class="panel-title">
                 Does this application send any data anywhere?
             </h3>
@@ -138,7 +156,7 @@
         <div class="panel-body">
             <p>
                 No security sensitive information such as your selected passphrase
-                size, die rolls, or the generated passphrase ever leaves your
+                size or the generated passphrase ever leaves your
                 browser or is logged anywhere. Ever. Once the initial page is loaded
                 as static files everything is done locally in your browser, nothing is sent to us.
             </p>
@@ -147,6 +165,11 @@
 
 </div>
 <!-- /.container -->
+<footer class="footer">
+    <p class="footer-txt footer-txt-yr">© 2024</p>
+    <img class="footer-logo" src="assets/cc-logo-sm.png" alt="catercare logo small" />
+    <p class="footer-txt footer-txt-cpny">Cater Care Pty Ltd</p>
+</footer>
 
 <!-- load third party libraries -->
 <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
@@ -164,7 +187,7 @@
     crossorigin="anonymous"></script>
 
 <!-- core application JS -->
-<script src="index.js" integrity="sha384-I5Yk/1V9z6busGgkfOhG9QG0x3vO+da9qvf78pJUWWlvFUd3dRWcKbE6/8lIRuPq"
+<script src="index.js" integrity="sha384-c60bx3bh2kJiNtH38ZqB27pHsXOr1nZA4a2HgdTYSXuEvXEPwibpVN3QHaV0HRel"
     crossorigin="anonymous"></script>
 </body>
 
