@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin-top: -95px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin-bottom: 50px;
+    padding-bottom: 50px
+}
+
+/* header/nav section styling */
+.logo-container {
+    background-color: #252525;
+    height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 320px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+/* header styling */
+.container {
+    width: 85%;
+    padding-bottom: 50px;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* btn group styling */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-group{
+    margin-top: 10px;
+}
+
+.btn-group-new {
+    margin-top: 10px;
+}
+
+.btn-refresh {
+    color: #FFF;
+    background-color: #3A94FD;
+    border-color: #ccc;
+}
+
+.btn-refresh:hover {
+    color: #FFF;
+    background-color: #026CE8;
+}
+
+.btn-custom {
+    background-color: #D9D9D9;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #B2B2B2;
+}
+
+/* output container styling */
+.well {
+    background-color: #F1F1F1;
+}
+
+.label {
+    background-color: #252525;
+    color: #8FCF69;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+code {
+    font-size: 95%;
+}
+
+.copy-button {
+    font-size: 12px;
+    width: 60px;
+    font-weight: bold;
+    color: #252525;
+}
+
+.copy-button:hover {
+    background-color: #8FCF69;
+}
+
+
+/* FAQ panels/dropdown styling */
+.panel-body {
+    display: none; 
+}
+
+.panel-heading {
+    cursor: pointer;
+}
+
+.text-muted {
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 25px; 
+}
+
+.panel-heading {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8FCF69;
+}
+
+.panel-default>.panel-heading {
+    background-color: #252525;
+}
+
+.panel-body {
+    background-color: #F1F1F1;
+}
+
+.panel-default>.panel-heading:hover {
+    background-color: #8FCF69;
+}
+
+.panel-default > .panel-heading:hover .panel-title {
+    color: #252525; 
+}
+
+.panel-heading.open {
+    background-color: #8FCF69;
+}
+
+.panel-heading.open .panel-title {
+    color: #252525;
+}
+
+.panel-heading.open:hover {
+    background-color: #252525;
+}
+
+.panel-heading.open:hover .panel-title{
+    color: #8FCF69;
+}
+
+/* footer styling */
+.footer {
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 50px; 
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-txt {
+    color: white;
+    margin: 0;
+}
+
+.footer-txt-yr {
+    margin-left: 20px;
+}
+
+.footer-txt-cpny {
+    margin-right: 20px;
+}

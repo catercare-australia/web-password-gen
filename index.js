@@ -314,3 +314,40 @@ $(document).ready(function () {
     displayCrackTime(wordList)
   })
 })
+
+
+// function for dropdown menus in FAQ
+document.addEventListener('DOMContentLoaded', function() {
+  const panelHeadings = document.querySelectorAll('.panel-heading');
+
+  panelHeadings.forEach(heading => {
+      // Initialize the state of the panel heading based on the panel content visibility
+      const panelBody = heading.nextElementSibling;
+      if (panelBody.style.display === 'none' || panelBody.style.display === '') {
+          heading.classList.remove('open');
+      } else {
+          heading.classList.add('open');
+      }
+
+      // Add click event listener
+      heading.addEventListener('click', function() {
+          if (panelBody.style.display === 'block') {
+              panelBody.style.display = 'none';
+              this.classList.remove('open');
+          } else {
+              panelBody.style.display = 'block';
+              this.classList.add('open');
+          }
+      });
+  });
+});
+
+// refresh page
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.querySelector('.btn.btn-refresh');
+  if (button) {
+      button.addEventListener('click', function() {
+          window.location.reload();
+      });
+  }
+});

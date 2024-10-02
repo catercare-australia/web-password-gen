@@ -12,16 +12,24 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css"
         crossorigin="anonymous" />
     <link rel="stylesheet" href="css/app.css" type="text/css"
-        integrity="sha384-PxEoEfoht/4p3zhoZ4g/DWVF/KznvesBxHwy2sp1ufg+ZAc0KQQYgiXoUOduQODX" crossorigin="anonymous" />
+        integrity="sha384-4SIRUbL6X/Gs3Bb9678rYia0JyixGMJsrpPkMBWFyrqcbPBsok6i5RPZlc0u6RNc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" crossorigin="anonymous" />    
 </head>
 
+<body>
+    <div class="logo-container">
+        <img class="logo-img" src="./assets/cc-logo.png" alt="catercare logo" />
+    </div>
+
 <div class="container">
-    <div class="page-header">
+    <div class="page-header"> 
+        <h1 class="header">Password Generator</h1>
         <p class="lead">
-            Put presentation text here.
+         Securely create a string and unique password for every account with our easy-to-use Password Generator. With just a click, you can generate complex passwords that significantly reduce the risk of your accounts being compromised.
         </p>
     </div>
 
+    <div class="buttons">
     <div class="btn-group" role="group" aria-label="Add random words group">
         <button type="button" class="btn btn-warning genWordsButton" data-words="5" data-rolls="5" data-reset="1">
             <span class="glyphicon glyphicon-random" aria-hidden="true"></span> 5
@@ -43,7 +51,19 @@
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
             Symbol
         </button>
+        <button type="button" class="btn btn-refresh">
+            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+            Refresh
+        </button>
     </div>
+
+    <div class="btn-group-new" aria-label="Add custom words group">
+        <button type="button" class="btn btn-custom">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            Generate Custom Password
+        </button>
+    </div>
+</div>
 
     <br />
     <br />
@@ -85,7 +105,7 @@
     <h2 class="text-muted">Frequently Asked Questions</h2>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading open">
             <h3 class="panel-title">How do I use it?</h3>
         </div>
         <div class="panel-body">
@@ -147,6 +167,11 @@
 
 </div>
 <!-- /.container -->
+<footer class="footer">
+    <p class="footer-txt footer-txt-yr">© 2024</p>
+    <img class="footer-logo" src="assets/cc-logo-sm.png" alt="catercare logo small" />
+    <p class="footer-txt footer-txt-cpny">Cater Care Pty Ltd</p>
+</footer>
 
 <!-- load third party libraries -->
 <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
@@ -158,13 +183,13 @@
 <!-- load the primary wordlist synchronously -->
 <script src="lists/special-min.js" integrity="sha384-bWlPtpszg6ff0Z4tBQ/rn+w/gSyuIWPoo6FygsYKV20VXR0nvOXP4f3TMSaY/poB"
     crossorigin="anonymous"></script>
-<script src="lists/diceware-min.js" integrity="sha384-Bxncy+d8O2xlYeIofeyogSmyxlxmxhrtOQZWVDYdHW4Ip7HR8J7z2mI8zcYhwIfH"
+<script src="lists/diceware-min.js" integrity="sha384-MCfdmqctHbGM+/frUnp9QbM7NcNTNR8nC69a+xrlirJsTbdoy7PIIXviscjQEpSi"
     crossorigin="anonymous"></script>
-<script src="lists/eff.js" integrity="sha384-flaRXFCjJXiYkQTk9YdSyqn5XEHkbISbCoVWyTgmNw8hmlJpn39fHW9//gccdZcc"
+<script src="lists/eff.js" integrity="sha384-ZPo2eW9L7Xn60BGoSrIVYDsTkYNVizOJSHTkcjPqdzUfTQEYiBYE9qr/QWRgxr+W"
     crossorigin="anonymous"></script>
 
 <!-- core application JS -->
-<script src="index.js" integrity="sha384-I5Yk/1V9z6busGgkfOhG9QG0x3vO+da9qvf78pJUWWlvFUd3dRWcKbE6/8lIRuPq"
+<script src="index.js" integrity="sha384-Hi9F7dJvW4rny98JoIkIt2EO5PB6Q09zBVy/xoDm+0P4AjQOD4eyy02vKqXvdP6K"
     crossorigin="anonymous"></script>
 </body>
 
