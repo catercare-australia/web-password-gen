@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css"
         crossorigin="anonymous" />
     <link rel="stylesheet" href="css/app.css" type="text/css"
-        integrity="sha384-4SIRUbL6X/Gs3Bb9678rYia0JyixGMJsrpPkMBWFyrqcbPBsok6i5RPZlc0u6RNc" crossorigin="anonymous" />
+        integrity="sha384-PxEoEfoht/4p3zhoZ4g/DWVF/KznvesBxHwy2sp1ufg+ZAc0KQQYgiXoUOduQODX" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" crossorigin="anonymous" />    
 </head>
 
@@ -23,9 +23,9 @@
 
 <div class="container">
     <div class="page-header"> 
-        <h1 class="header">Password Generator</h1>
+        <h1 class="header">Passphrase generator</h1>
         <p class="lead">
-         Securely create a string and unique password for every account with our easy-to-use Password Generator. With just a click, you can generate complex passwords that significantly reduce the risk of your accounts being compromised.
+         Securely create a unique passphrase for every account with our easy-to-use passphrase generator. With just a click, you can generate complex and easy to remember passphrases to be used as passwords on all your accounts, significantly reducing the risk of them being compromised.
         </p>
     </div>
 
@@ -54,13 +54,6 @@
         <button type="button" class="btn btn-refresh">
             <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
             Refresh
-        </button>
-    </div>
-
-    <div class="btn-group-new" aria-label="Add custom words group">
-        <button type="button" class="btn btn-custom">
-            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-            Generate Custom Password
         </button>
     </div>
 </div>
@@ -146,6 +139,16 @@
 
     <div class="panel panel-default">
         <div class="panel-heading">
+            <h3 class="panel-title">Is it compliant with Cater Care IT security policies ?</h3>
+        </div>
+        <div class="panel-body">Yes. Cater Care is rolling out passphrases for all users and that
+          tool has been chosen as the standard way to generate passphrases for the business.
+          For more information, consult the passphrase policy document.
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
             <h3 class="panel-title">
                 Does this application send any data anywhere?
             </h3>
@@ -178,13 +181,13 @@
 <!-- load the primary wordlist synchronously -->
 <script src="lists/special-min.js" integrity="sha384-bWlPtpszg6ff0Z4tBQ/rn+w/gSyuIWPoo6FygsYKV20VXR0nvOXP4f3TMSaY/poB"
     crossorigin="anonymous"></script>
-<script src="lists/diceware-min.js" integrity="sha384-MCfdmqctHbGM+/frUnp9QbM7NcNTNR8nC69a+xrlirJsTbdoy7PIIXviscjQEpSi"
+<script src="lists/diceware-min.js" integrity="sha384-Bxncy+d8O2xlYeIofeyogSmyxlxmxhrtOQZWVDYdHW4Ip7HR8J7z2mI8zcYhwIfH"
     crossorigin="anonymous"></script>
-<script src="lists/eff.js" integrity="sha384-ZPo2eW9L7Xn60BGoSrIVYDsTkYNVizOJSHTkcjPqdzUfTQEYiBYE9qr/QWRgxr+W"
+<script src="lists/eff.js" integrity="sha384-flaRXFCjJXiYkQTk9YdSyqn5XEHkbISbCoVWyTgmNw8hmlJpn39fHW9//gccdZcc"
     crossorigin="anonymous"></script>
 
 <!-- core application JS -->
-<script src="index.js" integrity="sha384-Hi9F7dJvW4rny98JoIkIt2EO5PB6Q09zBVy/xoDm+0P4AjQOD4eyy02vKqXvdP6K"
+<script src="index.js" integrity="sha384-c60bx3bh2kJiNtH38ZqB27pHsXOr1nZA4a2HgdTYSXuEvXEPwibpVN3QHaV0HRel"
     crossorigin="anonymous"></script>
 </body>
 
