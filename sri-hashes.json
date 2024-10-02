@@ -1,6 +1,7 @@
 {
-  "index.js": "sha384-I5Yk/1V9z6busGgkfOhG9QG0x3vO+da9qvf78pJUWWlvFUd3dRWcKbE6/8lIRuPq",
+  "index.js": "sha384-c60bx3bh2kJiNtH38ZqB27pHsXOr1nZA4a2HgdTYSXuEvXEPwibpVN3QHaV0HRel",
   "css/app.css": "sha384-PxEoEfoht/4p3zhoZ4g/DWVF/KznvesBxHwy2sp1ufg+ZAc0KQQYgiXoUOduQODX",
+  "css/styles.css": "sha384-v7VMXK8qwnKXPlYxULKTRNsMzFMcl7ht5udxW5lOzVWN78t9kk3H7iNpz8uLzJTm",
   "lists/alternative-min.js": "sha384-n54eORJtgeTfAQr8EXYh1kA+RC9JXTgQjyKfAAZkGOtyuMKGuZGOXue90nKDvHYz",
   "lists/alternative.js": "sha384-XLRtYezvGpNlET4iEicmGQEWL6d8krtsONOdUp1XrAjko5crZe0I2gzGcghYxtXY",
   "lists/diceware-min.js": "sha384-Bxncy+d8O2xlYeIofeyogSmyxlxmxhrtOQZWVDYdHW4Ip7HR8J7z2mI8zcYhwIfH",
