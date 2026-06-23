@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: 
+  args:
     - 'build'
     - '-t'
     - '$LOCATION-docker.pkg.dev/$PROJECT_ID/${_REGISTRY}/${_IMAGE}:${_VERSION_TAG}'
@@ -8,6 +8,6 @@ steps:
 images:
 - '$LOCATION-docker.pkg.dev/$PROJECT_ID/${_REGISTRY}/${_IMAGE}'
 substitutions:
-  _IMAGE: img-web-password-gen
+  _IMAGE: web-password-gen
   _VERSION_TAG: latest
-  _REGISTRY: repo-docker-main
+  _REGISTRY: it-tools
